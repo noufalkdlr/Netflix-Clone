@@ -1,0 +1,50 @@
+.title-cards{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.title-cards h2{
+    margin-bottom: 8px;
+}
+
+.card-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar{
+    display: none;
+}
+
+.card-list img{
+    width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.card-list .card{
+    position: relative;
+}
+
+.card-list .card::after{
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.card-list .card p{
+    position: absolute;
+    bottom: .8rem;
+    right: 8px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
