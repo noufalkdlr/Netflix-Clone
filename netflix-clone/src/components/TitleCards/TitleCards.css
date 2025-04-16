@@ -26,6 +26,8 @@
 
 .card-list .card{
     position: relative;
+    color: white;
+    text-decoration: none;
 }
 
 .card-list .card::after{
